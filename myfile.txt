@@ -1,0 +1,84 @@
+Generating initial requests: 
+Request #0 created: 192.653.576 to 260.639.072 for 8 sec
+Request #1 created: 732.029.781 to 637.982.295 for 11 sec
+
+Elapsed Time: 0
+Sending request #0 to Server #0
+Server #0: Turning on
+Server #0: Recieved Request #0
+
+Elapsed Time: 1
+Sending request #1 to Server #1
+Server #1: Turning on
+Server #1: Recieved Request #1
+Request #2 created: 548.749.139 to 023.601.630 for 7 sec
+
+Elapsed Time: 2
+Sending request #2 to Server #0
+Server #0: Recieved Request #2
+
+Elapsed Time: 3
+Request Queue empty...
+
+Elapsed Time: 4
+Request Queue empty...
+
+Elapsed Time: 5
+Request Queue empty...
+
+Elapsed Time: 6
+Request Queue empty...
+
+Elapsed Time: 7
+Request Queue empty...
+Server #0: Request #0 is finished
+
+Elapsed Time: 8
+Request Queue empty...
+Request #3 created: 396.567.455 to 447.452.547 for 6 sec
+
+Elapsed Time: 9
+Sending request #3 to Server #1
+Server #1: Recieved Request #3
+
+Elapsed Time: 10
+Request Queue empty...
+
+Elapsed Time: 11
+Request Queue empty...
+Server #1: Request #1 is finished
+
+Elapsed Time: 12
+Request Queue empty...
+Request #4 created: 413.488.687 to 662.986.029 for 5 sec
+
+Elapsed Time: 13
+Sending request #4 to Server #0
+Server #0: Recieved Request #4
+
+Elapsed Time: 14
+Request Queue empty...
+Server #0: Request #2 is finished
+
+Elapsed Time: 15
+Request Queue empty...
+
+Elapsed Time: 16
+Request Queue empty...
+
+Elapsed Time: 17
+Request Queue empty...
+Server #1: Request #3 is finished
+Server #1: Turning off, all requests finished
+Request #5 created: 727.178.405 to 951.601.622 for 14 sec
+
+Elapsed Time: 18
+Sending request #5 to Server #1
+Server #1: Turning on
+Server #1: Recieved Request #5
+
+Elapsed Time: 19
+Request Queue empty...
+Server #0: Request #4 is finished
+Server #0: Turning off, all requests finished
+

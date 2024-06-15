@@ -54,6 +54,7 @@ void LoadBalancer::run() {
     int currServer = 0;
     int currTime = 0;
 
+    int randNum = rand() % 10;
     while (currTime < time) {
         cout << "Elapsed Time: " << currTime << endl;
         // Check queue for request
@@ -72,8 +73,17 @@ void LoadBalancer::run() {
             servers.at(i).run();
         }
 
-        currTime++;
+        if (randNum == 0) {
+            requestQueue.push(Request(newId, generate_IP(), generate_IP(), rand() % 10 + 5));
+            newId++;
+            randNum = rand() % 10;
+        }
+        else {
+            randNum--;
+        }
 
+
+        currTime++;
         cout << endl;
     }
 }
