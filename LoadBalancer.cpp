@@ -13,13 +13,14 @@ LoadBalancer::LoadBalancer(int s, int t) {
     cout << "Generating initial requests: " << endl;
     int numId = 0;
     // filling queue with requests
-    for (int i = 0; i < numServers; i++) {
-        Request newRequest(numId, generate_IP(), generate_IP(), rand() % 10 + 5);
+    for (int i = 0; i < numServers * 100; i++) {
+        Request newRequest(numId, generate_IP(), generate_IP(), rand() % 20 + 5);
         requestQueue.push(newRequest);
 
         numId++;
     }
     newId = numId;
+    cout << "Starting Queue Size: " << requestQueue.size() << endl;
     cout << endl;
 
     // initializing servers
@@ -57,7 +58,7 @@ void LoadBalancer::run() {
         }
 
         if (randNum == 0) {
-            requestQueue.push(Request(newId, generate_IP(), generate_IP(), rand() % 10 + 5));
+            requestQueue.push(Request(newId, generate_IP(), generate_IP(), rand() % 20 + 5));
             newId++;
             randNum = rand() % 10;
         }
@@ -69,6 +70,8 @@ void LoadBalancer::run() {
         currTime++;
         cout << endl;
     }
+
+    cout << "LoadBalancer finished, final Request Queue size is " << requestQueue.size() << endl;
 }
 
 

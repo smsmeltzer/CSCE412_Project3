@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    freopen("myfile.txt", "w", stdout);
+    freopen("log.txt", "w", stdout);
 
     int numServers = atoi(argv[1]);
     int time = atoi(argv[2]);
