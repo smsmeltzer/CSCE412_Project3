@@ -4,6 +4,10 @@
 
 using namespace std;
 
+/// @brief Main function that initializes the Load Balancer
+/// @param argc number of user inputs
+/// @param argv user input
+/// @return 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         cout << "Usage: ./ <# of server> <time in seconds>" << endl;

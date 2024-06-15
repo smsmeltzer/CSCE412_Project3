@@ -1,0 +1,146 @@
+\hypertarget{classRequest}{}\doxysection{Request Class Reference}
+\label{classRequest}\index{Request@{Request}}
+
+
+Holds important data of each request.  
+
+
+
+
+{\ttfamily \#include $<$Request.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRequest_afaf8d8928de7ffff8a3767589489bd33}{Request}} ()
+\begin{DoxyCompactList}\small\item\em Time it will take the request to be fulfilled. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRequest_ab9a417fcc946c4e92d44480c8b90b4d3}{Request}} (int num, string ip\+\_\+o, string ip\+\_\+i, int t)
+\begin{DoxyCompactList}\small\item\em Initializes a request with the given parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRequest_a4d57c725686701f773eb3630630a7ea2}{$\sim$\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRequest_a026538b5d27774177b27d0552d25fa13}{id}}
+\item 
+int \mbox{\hyperlink{classRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}{time}}
+\begin{DoxyCompactList}\small\item\em Unique ID of the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classRequest_ae3394ea2aa8654ec22bc87083a8d3bda}{ip\+\_\+out}}
+\item 
+string \mbox{\hyperlink{classRequest_a2b93ebbd0fbd5ebf8b15f5583b087a12}{ip\+\_\+in}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classRequest_a99a5a5e77be3846d70aa6828b63254fc}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classRequest}{Request}} \&obj)
+\begin{DoxyCompactList}\small\item\em Overloaded Operator $<$$<$ to print request id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds important data of each request. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRequest_afaf8d8928de7ffff8a3767589489bd33}\label{classRequest_afaf8d8928de7ffff8a3767589489bd33}} 
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Request\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Time it will take the request to be fulfilled. 
+
+Default constructor \mbox{\Hypertarget{classRequest_ab9a417fcc946c4e92d44480c8b90b4d3}\label{classRequest_ab9a417fcc946c4e92d44480c8b90b4d3}} 
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Request\+::\+Request (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{string}]{ip\+\_\+o,  }\item[{string}]{ip\+\_\+i,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Initializes a request with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Unique id \\
+\hline
+{\em ip\+\_\+o} & out IP address \\
+\hline
+{\em ip\+\_\+i} & in IP address \\
+\hline
+{\em t} & time to complete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRequest_a4d57c725686701f773eb3630630a7ea2}\label{classRequest_a4d57c725686701f773eb3630630a7ea2}} 
+\index{Request@{Request}!````~Request@{$\sim$Request}}
+\index{````~Request@{$\sim$Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{$\sim$Request()}{~Request()}}
+{\footnotesize\ttfamily Request\+::$\sim$\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classRequest_a99a5a5e77be3846d70aa6828b63254fc}\label{classRequest_a99a5a5e77be3846d70aa6828b63254fc}} 
+\index{Request@{Request}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classRequest}{Request}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded Operator $<$$<$ to print request id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted request ID 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRequest_a026538b5d27774177b27d0552d25fa13}\label{classRequest_a026538b5d27774177b27d0552d25fa13}} 
+\index{Request@{Request}!id@{id}}
+\index{id@{id}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Request\+::id}
+
+IP address the finished request should be sent \mbox{\Hypertarget{classRequest_a2b93ebbd0fbd5ebf8b15f5583b087a12}\label{classRequest_a2b93ebbd0fbd5ebf8b15f5583b087a12}} 
+\index{Request@{Request}!ip\_in@{ip\_in}}
+\index{ip\_in@{ip\_in}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{ip\_in}{ip\_in}}
+{\footnotesize\ttfamily string Request\+::ip\+\_\+in\hspace{0.3cm}{\ttfamily [private]}}
+
+IP address the request came from \mbox{\Hypertarget{classRequest_ae3394ea2aa8654ec22bc87083a8d3bda}\label{classRequest_ae3394ea2aa8654ec22bc87083a8d3bda}} 
+\index{Request@{Request}!ip\_out@{ip\_out}}
+\index{ip\_out@{ip\_out}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{ip\_out}{ip\_out}}
+{\footnotesize\ttfamily string Request\+::ip\+\_\+out\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}\label{classRequest_a3cfb576ed0b5e08612f3de8bc7cd72e2}} 
+\index{Request@{Request}!time@{time}}
+\index{time@{time}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int Request\+::time}
+
+
+
+Unique ID of the request. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Request_8h}{Request.\+h}}\item 
+\mbox{\hyperlink{Request_8cpp}{Request.\+cpp}}\end{DoxyCompactItemize}

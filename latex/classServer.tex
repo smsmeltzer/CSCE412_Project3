@@ -1,0 +1,168 @@
+\hypertarget{classServer}{}\doxysection{Server Class Reference}
+\label{classServer}\index{Server@{Server}}
+
+
+Represents a \mbox{\hyperlink{classServer}{Server}} taking in requests and fulfilling them.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer_ad5ec9462b520e59f7ea831e157ee5e59}{Server}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServer_a256332d2dbe47776fe5c5e959ff5b52b}{Server}} (int num)
+\begin{DoxyCompactList}\small\item\em Initializes a server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}{$\sim$\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a4d3ce4ce0c75c081db44318e48cd3e38}{add\+\_\+request}} (\mbox{\hyperlink{classRequest}{Request}} r)
+\begin{DoxyCompactList}\small\item\em Adds a request to the server\textquotesingle{}s request queue, if the server was inactive, sets to active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_abb27d30b40a94326e3fd629d3b30b7d5}{run}} ()
+\begin{DoxyCompactList}\small\item\em Runs the server for one clock cycle, keeps track of the request that is being handled and if it\textquotesingle{}s finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classServer_ad09e2c4d55f3abbbc9f0eca4bd04b67d}{active}}
+\item 
+int \mbox{\hyperlink{classServer_ad430796220d97a4133c1ad93f64019b9}{id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+queue$<$ \mbox{\hyperlink{classRequest}{Request}} $>$ \mbox{\hyperlink{classServer_aecbdd1ee1d7f181c9ed749d611758ee1}{requests}}
+\item 
+int \mbox{\hyperlink{classServer_a3c68388fbf590d759850e38936cdfc56}{time}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classServer_a530eca65a10e5e7bc8da9e274835942e}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classServer}{Server}} \&obj)
+\begin{DoxyCompactList}\small\item\em Operator overload of $<$$<$ to easily print the \mbox{\hyperlink{classServer}{Server}}\textquotesingle{}s ID in a specific format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{classServer}{Server}} taking in requests and fulfilling them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classServer_ad5ec9462b520e59f7ea831e157ee5e59}\label{classServer_ad5ec9462b520e59f7ea831e157ee5e59}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+unique ID of the server \mbox{\Hypertarget{classServer_a256332d2dbe47776fe5c5e959ff5b52b}\label{classServer_a256332d2dbe47776fe5c5e959ff5b52b}} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Initializes a server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & assigns ID to the server \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}\label{classServer_a4b3aa2579cb1c8cd1d069582c14d0fa6}} 
+\index{Server@{Server}!````~Server@{$\sim$Server}}
+\index{````~Server@{$\sim$Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{$\sim$Server()}{~Server()}}
+{\footnotesize\ttfamily Server\+::$\sim$\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classServer_a4d3ce4ce0c75c081db44318e48cd3e38}\label{classServer_a4d3ce4ce0c75c081db44318e48cd3e38}} 
+\index{Server@{Server}!add\_request@{add\_request}}
+\index{add\_request@{add\_request}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{add\_request()}{add\_request()}}
+{\footnotesize\ttfamily void Server\+::add\+\_\+request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRequest}{Request}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Adds a request to the server\textquotesingle{}s request queue, if the server was inactive, sets to active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \mbox{\hyperlink{classRequest}{Request}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classServer_abb27d30b40a94326e3fd629d3b30b7d5}\label{classServer_abb27d30b40a94326e3fd629d3b30b7d5}} 
+\index{Server@{Server}!run@{run}}
+\index{run@{run}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Server\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs the server for one clock cycle, keeps track of the request that is being handled and if it\textquotesingle{}s finished. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classServer_a530eca65a10e5e7bc8da9e274835942e}\label{classServer_a530eca65a10e5e7bc8da9e274835942e}} 
+\index{Server@{Server}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classServer}{Server}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operator overload of $<$$<$ to easily print the \mbox{\hyperlink{classServer}{Server}}\textquotesingle{}s ID in a specific format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+formatted server ID 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classServer_ad09e2c4d55f3abbbc9f0eca4bd04b67d}\label{classServer_ad09e2c4d55f3abbbc9f0eca4bd04b67d}} 
+\index{Server@{Server}!active@{active}}
+\index{active@{active}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool Server\+::active}
+
+\mbox{\Hypertarget{classServer_ad430796220d97a4133c1ad93f64019b9}\label{classServer_ad430796220d97a4133c1ad93f64019b9}} 
+\index{Server@{Server}!id@{id}}
+\index{id@{id}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Server\+::id}
+
+keeps track if the server is active, handling requests, or inactive, no requests assigned \mbox{\Hypertarget{classServer_aecbdd1ee1d7f181c9ed749d611758ee1}\label{classServer_aecbdd1ee1d7f181c9ed749d611758ee1}} 
+\index{Server@{Server}!requests@{requests}}
+\index{requests@{requests}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{requests}{requests}}
+{\footnotesize\ttfamily queue$<$\mbox{\hyperlink{classRequest}{Request}}$>$ Server\+::requests\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classServer_a3c68388fbf590d759850e38936cdfc56}\label{classServer_a3c68388fbf590d759850e38936cdfc56}} 
+\index{Server@{Server}!time@{time}}
+\index{time@{time}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily int Server\+::time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+queue of requests assigned to the server to complete 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Server_8h}{Server.\+h}}\item 
+\mbox{\hyperlink{Server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}
